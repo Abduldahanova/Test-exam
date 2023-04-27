@@ -1,0 +1,34 @@
+
+.card {
+    background-color: transparent;
+    color: #ffff;
+    display: flex;
+    width: 30%;
+    border: none;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.card-front {
+    width: 1200px;
+}
+
+.card-img {
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+}
+.card-body {
+    text-align: center;
+}
+.card-title {
+    margin-bottom: 35px;
+}
+.card-text {
+    border-bottom: 2px solid #ffff;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.card-text:last-child {
+    border: none;
+}
