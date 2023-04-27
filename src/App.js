@@ -1,15 +1,21 @@
 import './App.css';
-import CV from './CV';
-import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
+import Image from './image/back.jpg'
+import { useState } from 'react';
+
+
+
 
 function App() {
+
+
   return (
     <div>
       <Header />
     </div>
-  );
+    
+  )
 }
 
 export default App;

@@ -1,10 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ font-family: 'Sigmar';
 }
 body {
-  background: linear-gradient(-45deg, #02364F, #38864B, #66C5E8, #44615A);
+ height: 200vh;
+}
+#responsive-navbar-nav {
+  margin-top: 15px;
+}
+
+
+body {
+  background: linear-gradient(-45deg, #d5e2aa, #7590d4, #8c8a95, #dfa0df);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 100vh;
@@ -19,9 +29,4 @@ body {
   100% {
       background-position: 0% 50%;
   }
-}
-
-#responsive-navbar-nav {
-  margin-top: 15px;
-}
-
+} 

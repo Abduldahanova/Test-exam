@@ -1,7 +1,12 @@
 .img {
-   width: 100%;
+   width: 80%;
    height: 80%;
 }
-.second {
-   height: 526px;
+#img {
+   background-color: transparent;
+   opacity: 0.9;
+}
+
+.carousel-indicators {
+   background-color: transparent;
 }

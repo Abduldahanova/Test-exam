@@ -1,0 +1,17 @@
+* {
+    color: #fff;
+}
+h1 {
+    margin: 10px 50px;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+span {
+    margin-left: 45px;
+}
+p {
+    margin: 10px 35px;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 5px;
+}

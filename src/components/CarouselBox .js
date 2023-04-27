@@ -1,43 +1,47 @@
-import React from 'react';
-import { Carousel } from 'react-bootstrap'
-import  first  from './first.jpg'
-import  second from '../image/second.jpg'
-import './style.css';
 
+ import  first  from '../image/first.jpg'
+
+
+
+
+
+import React, { useRef, useState } from "react";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+
+
+import { Pagination, Navigation } from "swiper";
 
 const CarouselBox = () => {
-    return (
-            <Carousel>
-                <Carousel.Item id='img'>
-                    <img 
+  return (
+    <>
+      <Swiper
+        pagination={{
+          type: "progressbar",
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide> <img 
                     className='img'
                     src={first}
-                    alt="Tutor" />
-                    <Carousel.Caption>
-                        <h1></h1>
-                        <p></p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img 
-                    className='img second'
-                    src={second}
-                    alt="Tutor2" />
-                    <Carousel.Caption id="text"> 
-                        <h1></h1>
-                        <p>Репетиции могут быть полезным инструментом для изучения иностранных языков. Они позволяют студентам не только улучшить свои языковые навыки, но и повысить уверенность в своих способностях и улучшить произношение.
-
-Во время репетиций студенты могут практиковать различные аспекты языка, включая грамматику, лексику и разговорную речь. Они также могут учиться использовать язык в различных контекстах, от повседневных разговоров до бизнес-встреч.
-
-Репетирование также может помочь студентам развить навыки слушания и понимания речи на иностранном языке. Они могут слушать носителей языка и практиковаться в понимании их речи.
-
-Важным аспектом репетирования на иностранном языке является обратная связь. Студенты могут получать обратную связь от своих преподавателей или более опытных коллег, которые могут помочь им улучшить свой язык.
-
-В целом, репетирование является важным инструментом для изучения иностранных языков. Он помогает студентам улучшить свои навыки, повысить уверенность и получить обратную связь для дальнейшего развития.
-</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
-    )
+                    alt="Tutor" /></SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide>
+      </Swiper>
+    </>
+  );
 }
 export default CarouselBox
