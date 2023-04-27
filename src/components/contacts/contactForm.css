@@ -1,16 +1,22 @@
-
+.form {
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.bg-img {
+    background-image: url(./image/font-img/chalkboard-main-background.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+}
 .card {
     background-color: transparent;
-    color: #ffff;
     display: flex;
     width: 30%;
     border: none;
     margin-left: 15px;
     margin-right: 15px;
-}
-
-.card-front {
-    width: 1200px;
 }
 
 .card-img {
@@ -20,6 +26,7 @@
 }
 .card-body {
     text-align: center;
+    color: #ffff;
 }
 .card-title {
     margin-bottom: 35px;

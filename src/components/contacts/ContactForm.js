@@ -4,15 +4,12 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import MapSvg from './image/icons/map.svg'
 import EmailSvg from './image/icons/email.svg'
 import ChatSvg from './image/icons/chat.svg'
-import TopImg from './image/font-img/top-img.jpg'
-
 
 function GroupCards() {
   return (
-        <CardGroup>
-      <div className="front">
-        <Card.Img id="top-img" src={TopImg} />
-    </div>
+    <CardGroup>
+        <div className="bg-img"></div>
+        <div className="form">
       <Card>
         <Card.Img src={MapSvg} />
         <Card.Body>
@@ -30,7 +27,7 @@ function GroupCards() {
         <Card.Body>
           <Card.Title>Email адрес:</Card.Title>
           <Card.Text>
-            cdy-info@sword-group.com.
+            cdy-info@sword-group.com
             </Card.Text>
           <Card.Text>
             https://dev.codifylab.com/
@@ -49,6 +46,7 @@ function GroupCards() {
           </Card.Text>
         </Card.Body>
       </Card>
+        </div>
     </CardGroup>
   );
 }
