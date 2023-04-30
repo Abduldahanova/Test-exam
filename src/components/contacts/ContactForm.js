@@ -1,9 +1,9 @@
-import "../contacts/contactForm.css"
+import "../contacts/contactForm.css";
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
-import MapSvg from './image/icons/map.svg'
-import EmailSvg from './image/icons/email.svg'
-import ChatSvg from './image/icons/chat.svg'
+import MapSvg from './image/icons/map.svg';
+import EmailSvg from './image/icons/email.svg';
+import ChatSvg from './image/icons/chat.svg';
 
 function GroupCards() {
   return (
@@ -47,6 +47,18 @@ function GroupCards() {
         </Card.Body>
       </Card>
         </div>
+      <div className="contact-menu">
+        <h4>contact us</h4>
+        <h2>Send Us Message</h2>
+        <div className="input-menu">
+          <input type="text" name="name" placeholder="Name"/>
+          <input type="email" name="email" placeholder="Email Adress"/>
+          <input type="tel" name="phone" placeholder="Phone Number"/>
+        </div>
+          <input className="text-subject" type="text" name="subject" placeholder="Subject"/>
+          <textarea className="text-message" name="message" placeholder="Message"></textarea>
+          <button>Send us message</button>
+      </div>
     </CardGroup>
   );
 }

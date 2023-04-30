@@ -47,7 +47,7 @@ const Footer = () => {
                     <div className="footer-list">
                     <img src={ChatSvg} />
                         <div className='footer-detail'>
-                        <h3>Email адрес :</h3>
+                        <h3>Контакты :</h3>
                             <p> 0500 431 430 </p>
                         </div>
                     </div>
