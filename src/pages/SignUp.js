@@ -1,4 +1,7 @@
 import React from 'react';
+import LoginPage from '../components/authorisation_form/log-in'
+import SignUpPage from '../components/authorisation_form/sign-up'
+
 
 import { useState } from "react"
 

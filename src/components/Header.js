@@ -16,6 +16,7 @@ import SignUp from '../pages/SignUp'
 
 const Header = () => {
         return (
+            
             <div>
             <Navbar collapseOnSelect expand="md" bg='dark' variant="dark">
                 <Container id='bar'>
@@ -53,4 +54,4 @@ const Header = () => {
             </div>
         )
     }
-export default Header;
+    export default Header;
