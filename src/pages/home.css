@@ -1,0 +1,30 @@
+* {
+    color: #000000;
+    text-align: center;
+}
+h1 {
+    margin: 70px 0 15px 0;
+    font-size: 36px;
+}
+h1:first-child {
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+#world {
+    display: block;
+    margin: auto;
+}
+#first {
+    margin-top: 140px;
+}
+.container {
+    display: flex;
+}
+.block {
+    padding: 50px;
+}
+p {
+    font-size: 22px;
+    text-align: left;
+    margin-left: 10px;
+}
