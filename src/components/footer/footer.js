@@ -1,10 +1,5 @@
 import React from 'react';
 import "../footer/footer.css"
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
-import Home from '../../pages/Home'
-import About from '../../pages/About'
-import Contacts from '../../pages/Contacts'
-import SignUp from '../../pages/SignUp'
 import LogoSvg from './img/icon/Tutor.svg'
 import MapSvg from '../contacts/image/icons/map.svg'
 import EmailSvg from '../contacts/image/icons/email.svg'

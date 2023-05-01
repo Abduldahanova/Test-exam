@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createElement } from 'react';
 import CarouselBox from '../components/CarouselBox ';
 import { Container } from 'react-bootstrap';
 import "./home.css"
@@ -9,6 +9,10 @@ import shed from '../image/shed.svg'
 import price from '../image/price.svg'
 
 
+
+
+
+
 const Home = () => {
   return (
     <div>
@@ -16,6 +20,23 @@ const Home = () => {
         <br />
           с репетиторами Tutor </h1>
         <CarouselBox />
+
+
+        <div className="category">
+        <div class="list-group">
+          <button type="button" class="list-group-item list-group-item-action">English</button>
+          <button type="button" class="list-group-item list-group-item-action"></button>
+          <button type="button" class="list-group-item list-group-item-action"></button>
+        </div>
+        <div class="list-group">
+          <button type="button" class="list-group-item list-group-item-action"></button>
+          <button type="button" class="list-group-item list-group-item-action" ></button>
+          <button type="button" class="list-group-item list-group-item-action" ></button>
+        </div>
+
+        </div>
+
+
           <section>
             <img 
             id='first'
@@ -46,7 +67,7 @@ const Home = () => {
                   id='world'
                   src={shed} 
                   alt="" />
-                  <h2>Гибкий график</h2>
+                  <h2>Гибкий <br /> график</h2>
                   <p>Занимайтесь в своем темпе, выбирая удобное время для уроков</p>
               </div>
               <div className="block">

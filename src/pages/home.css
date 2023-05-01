@@ -28,3 +28,30 @@ p {
     text-align: left;
     margin-left: 10px;
 }
+
+
+
+.category {
+    display: flex;
+    margin-top: 80px;
+}
+.list-group {
+    padding: 40px;
+    margin-left: 170px;
+}
+.list-group:last-child {
+    margin-left: 10px;
+}
+.list-group-item {
+    width: 450px;
+    height: 130px;
+    border: 1px solid black;
+}
+.list-group-item-action {
+    font-size: 32px;
+    font-weight: bold;
+}
+.list-group-item-action:hover {
+    background-color: #efe78f;
+}
+

@@ -6,7 +6,7 @@ const Contacts = () => {
   return (
     <div>
         <Contact />
-        <Load />
+        
     </div>
   )
 }
