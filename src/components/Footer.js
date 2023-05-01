@@ -1,11 +1,10 @@
 import React from 'react';
-import "../footer/footer.css"
-import LogoSvg from './img/icon/Tutor.svg'
-import MapSvg from '../contacts/image/icons/map.svg'
-import EmailSvg from '../contacts/image/icons/email.svg'
-import ChatSvg from '../contacts/image/icons/chat.svg'
-import VacationSvg from './img/icon/Vacation.svg'
-
+import "../components/styles/footer.css"
+import LogoSvg from './images/svg/Tutor.svg'
+import MapSvg from './images/svg/map.svg'
+import EmailSvg from './images/svg/email.svg'
+import ChatSvg from './images/svg/chat.svg'
+import VacationSvg from './images/svg/Vacation.svg'
 
 
 const Footer = () => {

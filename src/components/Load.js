@@ -1,8 +1,8 @@
-import './style.css';
+import './styles/style.css';
 
 import React from 'react';
 import { useEffect, useState } from "react"
-import Load from "../image/load.gif"
+import Load from "../components/images/gif/load.gif"
 
 
 const mockFetch = (url) => new Promise((resolve, reject) => {

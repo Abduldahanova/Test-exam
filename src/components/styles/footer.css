@@ -69,6 +69,7 @@
 }
 
 .footer-list h3 {
+    text-align: start;
     color: #b99272;
     font-weight: 600;
     font-size: 16px;

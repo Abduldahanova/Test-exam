@@ -1,12 +1,12 @@
 import React, { createElement } from 'react';
 import CarouselBox from '../components/CarouselBox ';
 import { Container } from 'react-bootstrap';
-import "./home.css"
-import logo from '../image/world.svg'
-import medal from '../image/medal.svg' 
-import safety from '../image/safety.svg'
-import shed from '../image/shed.svg'
-import price from '../image/price.svg'
+import "../components/styles/home.css"
+import logo from '../components/images/svg/world.svg'
+import medal from '../components/images/svg/medal.svg' 
+import safety from '../components/images/svg/safety.svg'
+import shed from '../components/images/svg/shed.svg'
+import price from '../components/images/svg/price.svg'
 
 
 
@@ -43,7 +43,7 @@ const Home = () => {
             src={logo} 
             alt="" 
             />
-            <h1><b>Сделайте весь мир своей зоной комфорта</b></h1>
+            <h2><b>Сделайте весь мир своей зоной комфорта</b></h2>
             <h2>Занимайтесь с Tutor и с лучшими репетиторами нашей компании</h2>
             <div className="container">
               <div className="block">

@@ -3,12 +3,7 @@
  box-sizing: border-box;
  margin: 0;
  padding: 0;
-font-family: serif;
-}
-body {
- height: 200vh;
- background: #fff;
- background-size: 400% 400%;
+ font-family: serif;
 }
 
 
