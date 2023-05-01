@@ -1,10 +1,10 @@
 import React from 'react';
-
+import Load from '../components/Load';
 
 const Contacts = () => {
   return (
     <div>
-        Contact
+        <Load />
     </div>
   )
 }

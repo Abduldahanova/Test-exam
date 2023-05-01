@@ -1,9 +1,9 @@
 import './style.css';
 
 import React from 'react';
-import { Navbar, Nav, Container, FormControl, Form, Button } from 'react-bootstrap'
-import logo from './logo192.png'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { Navbar, Nav, Container } from 'react-bootstrap'
+import logo from '../image/Tutor-logo.svg'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Home from '../pages/Home'
 import About from '../pages/About'
@@ -23,10 +23,10 @@ const Header = () => {
                         <img 
                         src={logo}
                         height="30"
-                        width="30"
+                        width="50"
                         className="d-inline-block align-top"
                         alt="Logo" 
-                        />   JenJen
+                        />   Tutor
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
