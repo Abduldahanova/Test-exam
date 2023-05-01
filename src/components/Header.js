@@ -1,15 +1,15 @@
-import './style.css';
+import './styles/style.css';
 
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap'
-import logo from '../image/Tutor-logo.svg'
+import logo from '../components/images/svg/Tutor.svg'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import Home from '../pages/Home'
-import About from '../pages/About'
-import Price from '../pages/Price'
-import Contacts from '../pages/Contacts'
-import SignUp from '../pages/SignUp'
+import Home from '../nav-pages/Home'
+import About from '../nav-pages/About'
+import Price from '../nav-pages/Price'
+import Contacts from '../nav-pages/Contacts'
+import SignUp from '../nav-pages/SignUp'
 
 
 

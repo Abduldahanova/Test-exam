@@ -1,8 +1,8 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
-import Contact from './components/contacts/ContactForm';
-import Footer from './components/footer/footer.js'
+import Contact from './components/ContactForm.js';
+import Footer from './components/Footer.js'
 
 function App() {
   return (

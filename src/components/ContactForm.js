@@ -1,9 +1,9 @@
-import "../contacts/contactForm.css";
+import '../components/styles/contactForm.css';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
-import MapSvg from './image/icons/map.svg';
-import EmailSvg from './image/icons/email.svg';
-import ChatSvg from './image/icons/chat.svg';
+import MapSvg from './images/svg/map.svg'
+import EmailSvg from './images/svg/email.svg';
+import ChatSvg from './images/svg/chat.svg';
 
 function GroupCards() {
   return (
