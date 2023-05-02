@@ -1,7 +1,5 @@
 import React from 'react';
 import '../components/styles/login.css'
-import
-
 import { useState } from "react"
 
 export const SignUp = () => {
@@ -42,7 +40,6 @@ export const SignUp = () => {
         onChange={(e) => setPassword(e.target.value)}
       />
       <button onClick={handleLogin}>
-        Войти<Link to="/admin"></Link>
       </button>
     </form>
   )
