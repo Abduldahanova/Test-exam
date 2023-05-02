@@ -1,5 +1,10 @@
 import React from 'react';
 import '../components/styles/login.css'
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> refs/remotes/origin/main
 import { useState } from "react"
 
 export const SignUp = () => {
@@ -40,6 +45,10 @@ export const SignUp = () => {
         onChange={(e) => setPassword(e.target.value)}
       />
       <button onClick={handleLogin}>
+<<<<<<< HEAD
+        Войти
+=======
+>>>>>>> refs/remotes/origin/main
       </button>
     </form>
   )
