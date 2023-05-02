@@ -1,7 +1,6 @@
 import React from 'react';
-import LoginPage from '../components/log-in'
-import SignUpPage from '../components/sign-up'
-
+import '../components/styles/login.css'
+import
 
 import { useState } from "react"
 
@@ -26,22 +25,24 @@ export const SignUp = () => {
 
   return (
     <form>
+      <p>Эл. почта</p>
       <input
         type="text"
         name="username"
-        placeholder="Username"
+        placeholder="Ваше имя или адрес эл.почты"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
       />
+       <p>Пароль</p>
       <input
         type="password"
         name="password"
-        placeholder="password"
+        placeholder="Ваш пароль"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
       <button onClick={handleLogin}>
-        Log in
+        Войти<Link to="/admin"></Link>
       </button>
     </form>
   )

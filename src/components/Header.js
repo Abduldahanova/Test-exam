@@ -5,7 +5,6 @@ import { Navbar, Nav, Container } from 'react-bootstrap'
 import logo from '../components/images/svg/Tutor.svg'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import Home from '../nav-pages/Home'
 import About from '../nav-pages/About'
 import Price from '../nav-pages/Price'
 import Contacts from '../nav-pages/Contacts'
@@ -35,18 +34,16 @@ const Header = () => {
                             <Nav.Link href="/">Home</Nav.Link>
                             <Nav.Link href="/about">About Us</Nav.Link>
                             <Nav.Link href="/contacts">Contact Us</Nav.Link>
-                            <Nav.Link href="/signUp"></Nav.Link>
-                            <Nav.Link href="/price">Price</Nav.Link>
-
+                            <Nav.Link href="/signUp">Log In</Nav.Link>
+                            {/* <Nav.Link href="/price">Price</Nav.Link> */}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
             <Router>
                 <Routes>
-                    <Route path="/" element={<Home/>}/>
                     <Route path="/about" element={<About/>}/>
-                    <Route path="/price" element={<Price/>}/>
+                    {/* <Route path="/price" element={<Price/>}/> */}
                     <Route path="/contacts" element={<Contacts/>}/>
                     <Route path="/signUp" element={<SignUp/>}/>
                 </Routes>

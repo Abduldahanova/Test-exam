@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 const LoginPage = () => {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
@@ -18,18 +19,23 @@ const handleLogin = (e) => {
     })
 }
     return (
+        
+        <div className="container-input">
+            
         <form>
+            <p>Эл. почта</p>
             <input 
             type="text"
             name="username"
-            placeholder="Username" 
+            placeholder="Ваше имя или адрес эл.почты" 
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             />
-            <input 
+            <p>Пароль</p>
+            <input
             type="password"
             name="password"
-            placeholder="Password" 
+            placeholder="Ваш пароль" 
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             />
@@ -37,6 +43,7 @@ const handleLogin = (e) => {
             >Log in
             </button>
         </form>
+        </div>
     )
 }
 export default LoginPage

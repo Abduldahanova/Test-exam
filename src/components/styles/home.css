@@ -32,20 +32,17 @@ h2 {
 
 
 
-.category {
+.catalog {
     display: flex;
     margin-top: 80px;
 }
-.list-group {
+.item-block {
     padding: 40px;
-    margin-left: 170px;
-}
-.list-group:last-child {
-    margin-left: 10px;
+    margin-left: 100px;
 }
 .list-group-item {
     width: 450px;
-    height: 130px;
+    height: 190px;
     border: 1px solid black;
 }
 .list-group-item-action {
