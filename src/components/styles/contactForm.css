@@ -5,7 +5,7 @@
     margin: 80px 10px;
 }
 .bg-img {
-    background-image: url(../images/png/chalkboard-main-background.png);
+    /* background-image: url(../images/png/chalkboard-main-background.png); */
     background-size: cover;
     background-position: center;
     width: 100%;

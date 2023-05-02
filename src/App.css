@@ -7,4 +7,6 @@
 }
 body{
  background: url('./components/images/png/chalkboard-main-background.png') fixed;
+ background-size: cover;
+ background-position: center center;
 }
