@@ -1,5 +1,6 @@
 import React from 'react';
 import '../components/styles/login.css'
+import './Admin.jsx'
 
 
 import { useState } from "react"
@@ -41,9 +42,9 @@ export const SignUp = () => {
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
-      <button onClick={handleLogin}>
-        Войти
-      </button>
+      <profile-box>
+      <a className='profile-btn' href="/Profile">Войти</a>
+      </profile-box>
     </form>
   )
 }

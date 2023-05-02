@@ -4,16 +4,29 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
 }
-form > input, button {
+form > input {
     width: 400px;
     height: 70px;
     margin: 0 auto;
+    padding-left: 10px;
 }
 form > p {
     margin-top: 20px;
 }
-form > button {
-    margin-top: 30px;
+form > profile-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border: 2px solid;
+    border-color: rgb(133, 133, 133);
+    margin-top: 20px;
+}
+.profile-btn {
+    color: #141619;
+    text-decoration: none;
 }
