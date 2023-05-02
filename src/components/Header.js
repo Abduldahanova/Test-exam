@@ -33,8 +33,8 @@ const Header = () => {
                         <Nav className="mx-auto">
                             <Nav.Link href="/">Home</Nav.Link>
                             <Nav.Link href="/about">About Us</Nav.Link>
-                            <Nav.Link href="/contacts">Contact Us</Nav.Link>
-                            <Nav.Link href="/signUp">Log In</Nav.Link>
+                            <Nav.Link href="/contacts">Свяж</Nav.Link>
+                            <Nav.Link href="/signUp">Войти</Nav.Link>
                             {/* <Nav.Link href="/price">Price</Nav.Link> */}
                         </Nav>
                     </Navbar.Collapse>

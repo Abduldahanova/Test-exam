@@ -1,5 +1,7 @@
 import React from 'react';
 import '../components/styles/login.css'
+import { Link } from 'react-router-dom';
+
 
 
 import { useState } from "react"
@@ -41,7 +43,7 @@ export const SignUp = () => {
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
-      <button onClick={handleLogin}>
+      <button onClick={handleLogin}><Link to="/"></Link>
         Войти
       </button>
     </form>

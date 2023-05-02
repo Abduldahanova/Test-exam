@@ -13,7 +13,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 const Home = () => {
   return (
     <div>
-    <h1><b>Говорите смело на любом языке</b>
+    <h1 className='main_bg'><b>Говорите смело на любом языке</b>
      <br />
        с репетиторами Tutor </h1>
      <CarouselBox />
