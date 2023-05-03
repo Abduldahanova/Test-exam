@@ -36,7 +36,7 @@
     border: 2px solid white;
     border-bottom: none;
 }
-.title{
+.name{
     text-align: left;
     margin-left: 10px;
 }
@@ -45,7 +45,7 @@
     width: 250px;
     height: 70px;
     text-align: center;
-    border-bottom: 2px solid white;
+    border: 2px solid white;
 }
 
 .table tr {
