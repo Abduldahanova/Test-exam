@@ -1,4 +1,4 @@
-*,*:before, *:after  {
+* {
     color: #fcf5f5;
     box-sizing: border-box;
     margin: 0;
@@ -54,22 +54,9 @@ h2 {
     padding: 30px;
     margin-top: 50px;
 
-    z-index: 1;
-    position: relative;
-    padding: 20px 46px;
-    margin-bottom: 30px;
-    text-align: center;
     text-transform: uppercase;
-    color: #252525;
-    font-size: 16px;
-    font-weight: bold;
-    background-color:transparent;
-    outline: none;
-    border: none;
-    -webkit-transition: color 0.5s;
-    transition: color 0.5s;
+    
     cursor: pointer;
-    border-radius: 30px;
 }
 .list-group-item:before {
     content: "";
@@ -79,73 +66,19 @@ h2 {
     top: 0;
     width: 100%;
     height: 100%;
-    /* border: 2px solid #fff; */
-    border-radius: 30px;
 }
-.list-group-item::after {
-    content: "";
-    z-index: -2;
-    position: absolute;
-    left: 3px;
-    top: 3px;
-    width: 100%;
-    height: 100%;
-    -webkit-transition: all 0.3s 0.2s;
-    transition: all 0.3s 0.2s;
-    border-radius: 30px;
-}
+
 .list-group-item:hover {
     color: #000;
     border-radius: 30px;
 }
-
-.blob-btn__inner {
-    z-index: -1;
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-    background: #ffffff;
-  }
-  
-  .blob-btn__blobs {
-    position: relative;
-    display: block;
-    height: 100%;
-    -webkit-filter: url("#goo");
-            filter: url("#goo");
-  }
-  
-  .blob-btn__blob {
-    position: absolute;
-    top: 2px;
-    width: 25%;
-    height: 100%;
-    background: #fff;
-    border-radius: 100%;
-    -webkit-transform: translate3d(0, 150%, 0) scale(1.7);
-            transform: translate3d(0, 150%, 0) scale(1.7);
-    -webkit-transition: -webkit-transform 0.45s;
-    transition: -webkit-transform 0.45s;
-    transition: transform 0.45s;
-    transition: transform 0.45s, -webkit-transform 0.45s;
-  }
-  .list-group-item {
-    background: #76A0D8;
-  }
-
-
-
 
 .list-group-item-action {
     font-size: 28px;
     font-weight: bold;
 }
 .list-group-item-action:hover {
-    background-color: #efe78f;
+    background-color: #b99272;
 }
 
 
