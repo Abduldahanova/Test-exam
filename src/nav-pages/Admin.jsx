@@ -7,7 +7,7 @@ const AdminPage = () => {
     const [users, setUsers] = useState();
     const getApiData = async () => {
         const response = await fetch(
-          "http://16.16.149.51/mentor/", { mode: 'cors' }
+          "http://16.16.149.51/mentor/"
         ).then((response) => response.json());   
         setUsers(response);
       };
@@ -16,42 +16,55 @@ const AdminPage = () => {
       }, []);
     return(
         <div className={S.container}>
+          <div className={S.btn}>
+              <button className={S.Add}>Добавить</button>
+              <button className={S.edit}>Редактировать</button>
+              <button className={S.delete}>Удалить</button>
+              </div>  
             <div className={S.list}>
                 <button>Студенты</button>
                 <button>Репетиторы</button>
                 <button>Категории языков</button>
             </div>
-            <div className={S.card}>
-                <div className={S.form}>
-                    <img src="" alt="#" />
-                    <div className={S.info}>
-                        <h2 className={S.name}>Name</h2>
-                        <span className={S.course}>English</span>
-                        <p className={S.exp}>Graduate form Univestity</p>
-                        <p className={S.text}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat rem quas, quod magnam ea et harum hic, dolorum, illo dolore obcaecati consectetur! Aliquam consequuntur quasi nisi facere neque consequatur sunt?</p>
-                    </div>
-                    <div className={S.rate}>
-                        <div>
-                        <p className={S.price}></p>
-                        <img src="" alt="#" />
-                        </div>
-                        <button className={S.message}>Message</button>    
-                    </div>
-                </div>
-
-
-                {
-                  <div className="app">
-                  {users &&
+            <table className={S.table}>
+              <td className={S.name}>
+                <th>Имя:</th>
+                <tr>{users &&
                     users.map((user) => (
-                      <div className="item-container">
-                        Id:{user.id} <div className="title">Title:{user.title}</div>
-                      </div>
-                   ))}
-                </div>
-                }
+                    <div className={S.title}>{user.name}</div>
+                   ))}</tr>
+              </td>
+              <td>
+                <th>Возраст:</th>
+                <tr>{users &&
+                    users.map((user) => (
+                    <div className={S.age}>{user.age}</div>
+                   ))}</tr>
+              </td>
+              <td>
+                <th>Стаж работы:</th>
+                <tr>{users &&
+                    users.map((user) => (
+                    <div className={S.exp}>{user.experience}</div>
+                   ))}</tr>
+              </td>
+              <td>
+                <th>Прайс:</th>
+                <tr>{users &&
+                    users.map((user) => (
+                    <div className={S.exp}>{user.rate}</div>
+                   ))}</tr>
+              </td>
+              <td>
+                <th>Язык:</th>
+                <tr>{users &&
+                    users.map((user) => (
+                    <div className={S.exp}>{user.course}</div>
+                   ))}</tr>
+              </td>
+              </table>
+              
             </div>
-        </div>
     )
 }
 export default AdminPage
