@@ -1,4 +1,4 @@
-import React, { createElement, useEffect, useState } from 'react';
+
 import CarouselBox from '../components/CarouselBox ';
 import "../components/styles/home.css"
 import logo from '../components/images/svg/world.svg'

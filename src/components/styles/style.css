@@ -2,9 +2,12 @@
 #responsive-navbar-nav {
    margin-top: 15px;
  }
- .navbar-toggler-icon {
+.navbar-toggler-icon {
    margin-left: 0px;
  }
+.nav-link:first-child {
+   margin-left: 150px;
+}
 .nav-link:hover {
    color: #efe78f;
 }
