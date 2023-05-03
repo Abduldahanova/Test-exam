@@ -4,7 +4,6 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
-import eng from "./images/jpg/enlish.jpg"
 
 import "./styles/swiper.css";
 
@@ -31,7 +30,7 @@ export default function CarouselBox() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src={eng} />
+          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
         </SwiperSlide>
         <SwiperSlide>
           <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
