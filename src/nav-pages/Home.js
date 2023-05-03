@@ -7,6 +7,7 @@ import safety from '../components/images/svg/safety.svg'
 import shed from '../components/images/svg/shed.svg'
 import price from '../components/images/svg/price.svg'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import Catalog from '../components/catalog';
 
 
 
@@ -17,24 +18,40 @@ const Home = () => {
      <br />
        с репетиторами Tutor </h1>
      <CarouselBox />
+     < Catalog/>
+     
  <div className="catalog">
    <div className="item-block">
-   <Link className="list-group-item list-group-item-action" to='/category'>English</Link>
-   <Link className="list-group-item list-group-item-action" to='/category'>English</Link>
+    <div className="item">
    <Link className="list-group-item list-group-item-action" to='/category'>English</Link>
    </div>
+   <div className="item">
+   <Link className="list-group-item list-group-item-action" to='/category'>English</Link>
+   </div>
+   <div className="item">
+   <Link className="list-group-item list-group-item-action" to='/category'>English</Link>
+   </div>
+   </div>
    <div className="item-block">
+   <div className="utem">
    <Link className="list-group-item list-group-item-action" to='/category'>English</Link>
+   </div>
+   <div className="item">
    <Link className="list-group-item list-group-item-action" to='/category'>English</Link>
+   </div>
+   <div className="item">
    <Link className="list-group-item list-group-item-action" to='/category'>English</Link>
+   </div>
    </div>
  </div>
        <section>
+        <div className="logos">
          <img 
          id='first'
          src={logo} 
          alt="" 
          />
+         </div>
          <h2><b>Сделайте весь мир своей зоной комфорта</b></h2>
          <h2>Занимайтесь с Tutor и с лучшими репетиторами нашей компании</h2>
          <div className="container">
