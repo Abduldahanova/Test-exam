@@ -45,7 +45,7 @@ export const SignUp = () => {
         onChange={(e) => setPassword(e.target.value)}
       />
       <profile-box>
-      <a className='profile-btn' href="/Profile">Войти</a>
+      <a className='profile-btn' href="/Profile"> <span></span> Войти</a>
       </profile-box>
     </form>
   )
