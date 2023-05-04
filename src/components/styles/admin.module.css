@@ -1,9 +1,9 @@
 .container {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100vh;
     padding: 0 20px;
 }
 
@@ -26,6 +26,7 @@
     margin-bottom: 20px;
 }
 
+<<<<<<< HEAD
 .card {
     justify-content: space-between;
     background-color:  #000000;
@@ -33,39 +34,55 @@
     height: 400px;
     margin: 0 40px;
     padding-right: 20px;
+=======
+.table {
+    width: 85%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+.table td {
+    border: 2px solid white;
+    border-bottom: none;
+}
+.name{
+    text-align: left;
+    margin-left: 10px;
+}
+.table th {
+    font-size: xx-large;
+    width: 250px;
+    height: 70px;
+    text-align: center;
+    border: 2px solid white;
+>>>>>>> refs/remotes/origin/main
 }
 
-.form {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.table tr {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
 }
-.info {
-    display: flex;
-    flex-direction: column;
-    width: calc(100% / 3);
-    color: black;
+
+.btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% / 3) - 30px;
+    height: 200px;
 }
-.name {
-    text-align: start;
-}
-.rate {
-    display: flex;
-    flex-direction: column;
-}
-.rate div {
-    margin-bottom: 100px;
-}
-.message {
+
+button {
     cursor: pointer;
     background-color: #b99272;
     color: #fff;
     text-transform: uppercase;
-    width: 200px;
+    width: 150px;
     height: 50px;  
     border: none    ;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
 }
 
 
