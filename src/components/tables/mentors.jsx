@@ -1,9 +1,12 @@
+import M from '../styles/admin.module.css'
+
 export const MentorsTable = ({ data }) => {
     return (
-        <table className="">
+        <table className={M.table}>
                     <thead>
                         <tr>
-                            <th className="">Имя:</th>
+                            <th>Фото:</th>
+                            <th className={M.name}>Имя:</th>
                             <th>Возраст:</th>
                             <th>Стаж работы:</th>
                             <th>Прайс:</th>
@@ -15,6 +18,7 @@ export const MentorsTable = ({ data }) => {
                         {data.length &&
                             data.map((item) => (
                                 <tr key={item.id}>
+                                    <td>{item.avatar}</td>
                                     <td>{item.name}</td>
                                     <td>{item.age}</td>
                                     <td>{item.experience}</td>

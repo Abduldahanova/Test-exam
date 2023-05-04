@@ -8,6 +8,7 @@ form {
     text-align: center;
 }
 form > input {
+    color: #141619;
     width: 400px;
     height: 70px;
     margin: 0 auto;

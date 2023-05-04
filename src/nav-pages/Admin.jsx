@@ -6,7 +6,7 @@ import { useParams } from "react-router";
 import { MentorsTable } from "../components/tables/mentors";
 import { CategoriesTable } from "../components/tables/categories";
 import { StudentsTable } from "../components/tables/students";
-import S from "../components/styles/admin.module.css"
+import M from "../components/styles/admin.module.css"
 
 const AdminPage = () => {
 
@@ -26,28 +26,28 @@ const AdminPage = () => {
 
     return(
        
-        <div className={S.container}>
-            <div className={S.btn}>
-                <button className={S.Add}>Добавить</button>
-                <button className={S.edit}>Редактировать</button>
-                <button className={S.delete}>Удалить</button>
+        <div className={M.container}>
+            <div className={M.btn}>
+                <button className={M.Add}>Добавить</button>
+                <button className={M.edit}>Редактировать</button>
+                <button className={M.delete}>Удалить</button>
             </div>  
 
-            <div  className={S.list}>
-                <NavLink to='/Profile/mentors'>
+            <div  className={M.list}>
+                <NavLink to='/Profile/mentor'>
                     mentors
                 </NavLink>
-                <NavLink to='/Profile/students'>
+                <NavLink to='/Profile/student'>
                 students
                 </NavLink>
-                <NavLink to='/Profile/categories'>
+                <NavLink to='/Profile/course'>
                     categories
                 </NavLink>
             </div>
 
             {tab === 'mentor' && <MentorsTable data={data} />}
-            {tab === 'students' && <StudentsTable data={data} />}
-            {tab === 'categories' && <CategoriesTable data={data} />}
+            {tab === 'student' && <StudentsTable data={data} />}
+            {tab === 'course' && <CategoriesTable data={data} />}
             
           
         </div>
