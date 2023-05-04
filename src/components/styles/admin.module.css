@@ -26,15 +26,7 @@
     margin-bottom: 20px;
 }
 
-<<<<<<< HEAD
-.card {
-    justify-content: space-between;
-    background-color:  #000000;
-    width: 80%;
-    height: 400px;
-    margin: 0 40px;
-    padding-right: 20px;
-=======
+
 .table {
     width: 85%;
     margin-top: 100px;
@@ -55,7 +47,7 @@
     height: 70px;
     text-align: center;
     border: 2px solid white;
->>>>>>> refs/remotes/origin/main
+
 }
 
 .table tr {

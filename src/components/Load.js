@@ -20,7 +20,7 @@ const Loading = () => {
 
   useEffect(() => {
     setLoading(true)
-    mockFetch()
+    mockFetch("http://16.16.149.51/mentor/")
       .then(res => res.json())
       .then(data => {
         setEvents(data)

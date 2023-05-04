@@ -7,7 +7,7 @@ import safety from '../components/images/svg/safety.svg'
 import shed from '../components/images/svg/shed.svg'
 import price from '../components/images/svg/price.svg'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
-import Catalog from '../components/catalog';
+
 
 
 

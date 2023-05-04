@@ -1,19 +1,23 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
+import { NavLink } from "react-router-dom";
+import { useParams } from "react-router";
+import { MentorsTable } from "../components/tables/mentors";
+import { CategoriesTable } from "../components/tables/categories";
+import { StudentsTable } from "../components/tables/students";
 import S from "../components/styles/admin.module.css"
 
 const AdminPage = () => {
-    const [users, setUsers] = useState();
-    const [showTutors, setShowTutors] = useState(false);
-    const [showStudents, setShowStudents] = useState(true); // добавляем состояние для кнопки "Студенты"
-    const [showLanguages, setShowLanguages] = useState(true); // добавляем состояние для кнопки "Категории языков"
+
+    const [data, setData] = useState([]);
+    const { tab } = useParams()
     
+    //mentor, students, category
     const getApiData = async () => {
-        const response = await fetch(
-          "http://16.16.149.51/mentor/"
-        ).then((response) => response.json());   
-        setUsers(response);
+        const response = await fetch( `http://16.16.149.51/${tab}/`)
+        const data = await response.json()
+        setData(data);
     };
     
     useEffect(() => {
@@ -21,54 +25,31 @@ const AdminPage = () => {
     }, []);
 
     return(
+       
         <div className={S.container}>
             <div className={S.btn}>
                 <button className={S.Add}>Добавить</button>
                 <button className={S.edit}>Редактировать</button>
                 <button className={S.delete}>Удалить</button>
             </div>  
-            <div className={S.list}>
-                <button onClick={() => {
-                    setShowTutors(false);
-                    setShowStudents(true);
-                    setShowLanguages(false);
-                }}>Студенты</button>
-                <button onClick={() => {
-                    setShowTutors(true);
-                    setShowStudents(false);
-                    setShowLanguages(false);
-                }}>Репетиторы</button>
-                <button onClick={() => {
-                    setShowTutors(false);
-                    setShowStudents(false);
-                    setShowLanguages(true);
-                }}>Категории языков</button>
+
+            <div  className={S.list}>
+                <NavLink to='/Profile/mentors'>
+                    mentors
+                </NavLink>
+                <NavLink to='/Profile/students'>
+                students
+                </NavLink>
+                <NavLink to='/Profile/categories'>
+                    categories
+                </NavLink>
             </div>
-            {showTutors && (
-                <table className={S.table}>
-                    <tbody>
-                        <tr>
-                            <th className={S.name}>Имя:</th>
-                            <th>Возраст:</th>
-                            <th>Стаж работы:</th>
-                            <th>Прайс:</th>
-                            <th>Язык:</th>
-                        </tr>
-                        {users &&
-                        users.map((user) => (
-                            <tr key={user.id}>
-                                <td>{user.name}</td>
-                                <td>{user.age}</td>
-                                <td>{user.experience}</td>
-                                <td>{user.rate}</td>
-                                <td>{user.course}</td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
-            )}
-            {showStudents && <p>Список студентов</p>}
-            {showLanguages && <p>Список категорий языков</p>}
+
+            {tab === 'mentor' && <MentorsTable data={data} />}
+            {tab === 'students' && <StudentsTable data={data} />}
+            {tab === 'categories' && <CategoriesTable data={data} />}
+            
+          
         </div>
     )
 }

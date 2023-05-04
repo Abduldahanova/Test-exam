@@ -7,7 +7,7 @@ const Category = () => {
   
   const getApiData = async () => {
     const response = await fetch(
-      "http://16.16.149.51/mentor/"
+      "http://16.16.149.51/course/id"
     ).then((response) => response.json());   
     setUsers(response);
   };
@@ -17,9 +17,11 @@ const Category = () => {
   }, []);
   return (
     <div>
+      
           {users.map((user) => (
           <div key={user.avatar} className="item-container">
-            <h1>{user.course}</h1>
+            <>{user.avatar}</>
+
           </div>
         ))}
     </div>
