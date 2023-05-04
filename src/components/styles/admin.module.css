@@ -15,8 +15,8 @@
 
 .list button {
     cursor: pointer;
-    background-color: #b99272;
-    color: #fff;
+    background-color: #1c4d7b;
+    color: #000000;
     text-transform: uppercase;
     font-weight: 700;
     width: 200px;
@@ -28,7 +28,7 @@
 
 .card {
     justify-content: space-between;
-    background-color:  #fff;
+    background-color:  #000000;
     width: 80%;
     height: 400px;
     margin: 0 40px;

@@ -1,7 +1,6 @@
 import "../components/styles/about.css"
 
 import React from 'react';
-import Load from '../components/Load.js'
 import about from '../components/images/jpg/about.jpg'
 import test from '../components/images/gif/giphy.gif'
 import chat from '../components/images/gif/chat.gif'
@@ -16,7 +15,7 @@ const About = () => {
     <div>
       
       <img className="w-100" src={about} alt="" />
-      <h2>Tutor :</h2>
+      <h1>Tutor :</h1>
       <p className="about-text">
       <span>Мы</span>- профессиональное сообщество частных репетиторов, которые занимаются обучением людей и помогают им развивать свои языковые навыки. Наша миссия заключается в том, чтобы помочь людям достичь лучшего качества общения и более глубокого понимания мира, используя свои языковые навыки.
 Язык и общение являются фундаментальными элементами человеческого бытия. Они помогают нам выражать наши мысли и чувства, обмениваться идеями и знаниями, и создавать связи с другими людьми. Без языка и общения мы не могли бы добиваться больших успехов в обществе и даже в нашей личной жизни.

@@ -33,19 +33,20 @@ h2 {
 .block p {
     font-size: 22px;
     text-align: left;
-    margin-left: 10px;
+    padding: 40px 0 90px 0;
 }
-
+.block h2 {
+    margin-bottom: 0px;
+}
 
 
 .catalog {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 150px;
 }
-.item-block {
-    padding: 30px;
-}
+
 .list-group-item {
     width: 400px;
     height: 100px;
@@ -53,10 +54,11 @@ h2 {
     text-align: center;
     padding: 30px;
     margin-top: 50px;
-
     text-transform: uppercase;
-    
     cursor: pointer;
+}
+.list-group-item:not(:first-child) {
+    border-top:  2px solid #fff;
 }
 .list-group-item:before {
     content: "";
@@ -85,3 +87,6 @@ h2 {
 @media screen and (max-width: 1000px) {
     
 }
+
+
+

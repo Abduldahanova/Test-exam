@@ -1,10 +1,12 @@
-
 #responsive-navbar-nav {
    margin-top: 15px;
- }
+}
 .navbar-toggler-icon {
    margin-left: 0px;
- }
+}
+.nav-link {
+   margin-left: 30px;
+}
 .nav-link:first-child {
    margin-left: 150px;
 }

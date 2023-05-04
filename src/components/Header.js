@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import About from '../nav-pages/About'
 import Contacts from '../nav-pages/Contacts'
 import SignUp from '../nav-pages/SignUp'
-
+// import BG from ".././components/images/png/1664796989_j-2-removebg-preview (1).png"
 
 
 
@@ -21,11 +21,11 @@ const Header = () => {
                     <Navbar.Brand href="/">
                         <img 
                         src={logo}
-                        height="30"
-                        width="50"
+                        height="70"
+                        width="210"
                         className="d-inline-block align-top"
                         alt="Logo" 
-                        />   Tutor
+                        /> 
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
@@ -45,6 +45,7 @@ const Header = () => {
                     <Route path="/signUp" element={<SignUp/>}/>
                 </Routes>
             </Router>
+            {/* <img className='Bg' src={BG} alt="" /> */}
             </div>
         )
     }

@@ -11,38 +11,35 @@ import Catalog from '../components/catalog';
 
 
 
+import React, { useState, useEffect } from "react";
+
 const Home = () => {
+  const [users, setUsers] = useState([]);
+  
+  const getApiData = async () => {
+    const response = await fetch(
+      "http://16.16.149.51/course/"
+    ).then((response) => response.json());   
+    setUsers(response);
+  };
+
+  useEffect(() => {
+    getApiData();
+  }, []);
   return (
     <div>
     <h1 className='main_bg'><b>Говорите смело на любом языке</b>
      <br />
        с репетиторами Tutor </h1>
      <CarouselBox />
-     < Catalog/>
+     
      
  <div className="catalog">
-   <div className="item-block">
-    <div className="item">
-   <Link className="list-group-item list-group-item-action" to='/category'>English</Link>
-   </div>
-   <div className="item">
-   <Link className="list-group-item list-group-item-action" to='/category'>English</Link>
-   </div>
-   <div className="item">
-   <Link className="list-group-item list-group-item-action" to='/category'>English</Link>
-   </div>
-   </div>
-   <div className="item-block">
-   <div className="utem">
-   <Link className="list-group-item list-group-item-action" to='/category'>English</Link>
-   </div>
-   <div className="item">
-   <Link className="list-group-item list-group-item-action" to='/category'>English</Link>
-   </div>
-   <div className="item">
-   <Link className="list-group-item list-group-item-action" to='/category'>English</Link>
-   </div>
-   </div>
+  {users.map((user) => (
+    <Link className="list-group-item list-group-item-action" to="/category" key={user.id}>
+      {user.name}
+      </Link>
+  ))}
  </div>
        <section>
         <div className="logos">
