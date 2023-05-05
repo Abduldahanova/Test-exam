@@ -5,6 +5,11 @@ import MapSvg from './images/svg/map.svg'
 import EmailSvg from './images/svg/email.svg';
 import ChatSvg from './images/svg/chat.svg';
 
+
+const handleButtonClick = () => {
+  window.location.reload();
+};
+
 function GroupCards() {
   return (
     <CardGroup>
@@ -57,7 +62,7 @@ function GroupCards() {
         </div>
           <input className="text-subject" type="text" name="subject" placeholder="Subject"/>
           <textarea className="text-message" name="message" placeholder="Message"></textarea>
-          <button>Send us message</button>
+          <button onClick={handleButtonClick}>Send us message</button>
       </div>
     </CardGroup>
   );

@@ -6,7 +6,7 @@ import medal from '../components/images/svg/medal.svg'
 import safety from '../components/images/svg/safety.svg'
 import shed from '../components/images/svg/shed.svg'
 import price from '../components/images/svg/price.svg'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom'
 
 
 
@@ -14,18 +14,19 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import React, { useState, useEffect } from "react";
 
 const Home = () => {
-  const [users, setUsers] = useState([]);
+  const [data, setData] = useState(null);
   
   const getApiData = async () => {
-    const response = await fetch(
-      "http://16.16.149.51/course/"
-    ).then((response) => response.json());   
-    setUsers(response);
-  };
+    const response = await fetch( `http://16.16.149.51/course/3/detail/`)
+    const data = await response.json()
+    setData(data);
+};
 
-  useEffect(() => {
+useEffect(() => {
     getApiData();
-  }, []);
+}, []);
+
+
   return (
     <div>
     <h1 className='main_bg'><b>Говорите смело на любом языке</b>
@@ -34,13 +35,15 @@ const Home = () => {
      <CarouselBox />
      
      
- <div className="catalog">
-  {users.map((user) => (
-    <Link className="list-group-item list-group-item-action" to="/category" key={user.id}>
-      {user.name}
-      </Link>
-  ))}
- </div>
+     <div className="catalog">
+      { data?.mentors.map((course) => (
+        <NavLink className="list-group-item list-group-item-action" to="/category" key={course}>
+          {data.name}
+        </NavLink>
+      ))}
+    </div>
+
+    
        <section>
         <div className="logos">
          <img 

@@ -1,0 +1,16 @@
+.item-containers {
+    border: 2px solid black;
+    display: flex;
+    background: rgba(55, 55, 55, 0.2);
+    backdrop-filter: blur(8px);
+    justify-content: space-between;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.item-containers > img {
+    width: 300px;
+    height: 200px;
+
+}
