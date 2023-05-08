@@ -18,20 +18,18 @@ form > p {
     margin-top: 20px;
 }
 form > profile-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 50px;
-    border: 2px solid;
-    border-color: rgb(133, 133, 133);
+    text-align: center;
+    cursor: pointer;
+    background-color: #b99272;
+    text-transform: uppercase;
+    width: 150px;
+    height: 50px;  
+    border-radius: 20px;
+    text-decoration: none;
     margin-top: 20px;
+    padding-top: 14px;
 }
-
-  
-  
-  
 .profile-btn {
-    color: #141619;
+    color: #fff;
     text-decoration: none;
 }

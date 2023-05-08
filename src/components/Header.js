@@ -16,25 +16,25 @@ const Header = () => {
         return (
             
             <div>
-            <Navbar collapseOnSelect expand="md" bg='dark' variant="dark">
+            <Navbar collapseOnSelect expand="md">
                 <Container id='bar'>
                     <Navbar.Brand href="/">
                         <img 
                         src={logo}
-                        height="70"
-                        width="210"
+                        height="100"
+                        width="200"
                         className="d-inline-block align-top"
                         alt="Logo" 
                         /> 
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="mx-auto">
+                        <div className='nav-list'>
                             <Nav.Link href="/">Главная</Nav.Link>
                             <Nav.Link href="/about">О Нас </Nav.Link>
                             <Nav.Link href="/contacts">Свяжитесь с нами</Nav.Link>
                             <Nav.Link href="/signUp">Войти</Nav.Link>
-                        </Nav>
+                        </div>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

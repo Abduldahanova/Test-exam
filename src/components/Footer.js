@@ -12,7 +12,8 @@ const Footer = () => {
         <div className="footer-container">
             <div className="footer-top">
             <img className="logo-svg" src={LogoSvg} alt="#" />
-            <div className="footer-working-hours">Рабочие часы
+            <div className="footer-working-hours">
+                <h2 className='subtitle'>Рабочие часы:</h2>
             <ul>
                 <li>Понедельник-Пятница
                     <p className='work-time'>08:00 - 21:00</p>
@@ -23,7 +24,8 @@ const Footer = () => {
                 <img className="vacation-svg" src={VacationSvg} alt="#" />
             </ul>
             </div>
-            <div className='footer-form'>Contact Us
+            <div className='footer-form'>
+                <h2 className='subtitle'>Наши контакты:</h2>
                     <div className="footer-list">
                     <img src={MapSvg} />
                         <div className='footer-detail'>

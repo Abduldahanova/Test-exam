@@ -18,7 +18,7 @@ export const MentorsTable = ({ data }) => {
                         {data.length &&
                             data.map((item) => (
                                 <tr key={item.id}>
-                                    <td>{item.avatar}</td>
+                                    <td> <img className={M.img} src={item.avatar} alt="#" /></td>
                                     <td>{item.name}</td>
                                     <td>{item.age}</td>
                                     <td>{item.experience}</td>

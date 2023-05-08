@@ -13,7 +13,6 @@ const AdminPage = () => {
     const [data, setData] = useState([]);
     const { tab } = useParams()
     
-    //mentor, students, category
     const getApiData = async () => {
         const response = await fetch( `http://16.16.149.51/${tab}/`)
         const data = await response.json()
@@ -22,7 +21,7 @@ const AdminPage = () => {
     
     useEffect(() => {
         getApiData();
-    }, []);
+    }, [tab]);
 
     return(
        

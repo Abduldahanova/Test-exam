@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: black;
+    background-color: #212529;
     width: 100%;
     height: 550px; 
     padding-top: 40px;
@@ -21,9 +21,7 @@
 
 .footer-working-hours {
     position: relative;
-    font-size: 24px;
-    font-weight: 600;
-    color: #ffff;
+    padding-top: 20px;
 }
 
 .footer-working-hours ul li{
@@ -44,7 +42,7 @@
 
 .vacation-svg {
     position: absolute;
-    top: 100px;
+    top: 130px;
     left: 0;
     width: 150px;
     height: 150px;
@@ -54,6 +52,7 @@
     font-size: 24px;
     font-weight: 600;
     color: #ffff;
+    padding-top: 20px;
 }
 
 .footer-list {
@@ -74,6 +73,7 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 1.75;
+    margin-bottom: 0;
 }
 
 .footer-list p {

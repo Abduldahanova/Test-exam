@@ -4,6 +4,8 @@
  margin: 0;
  padding: 0;
  font-family: "Gasin";
+ color: #fcf5f5;
+
 }
 body {
     background: url('./components/images/png/back.jpeg') fixed;

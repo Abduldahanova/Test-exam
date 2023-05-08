@@ -12,7 +12,7 @@
     height: 500px;
 }
 .card {
-    background: #2a563d;
+    background: transparent;
     display: flex;
     width: 30%;
     border: none;

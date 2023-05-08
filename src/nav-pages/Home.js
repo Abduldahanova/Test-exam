@@ -30,8 +30,7 @@ useEffect(() => {
   return (
     <div>
     <h1 className='main_bg'><b>Говорите смело на любом языке</b>
-     <br />
-       с репетиторами Tutor </h1>
+     <br />с репетиторами Tutor </h1>
      <CarouselBox />
      
      
@@ -52,8 +51,10 @@ useEffect(() => {
          alt="" 
          />
          </div>
+         <div className="subtitle">
          <h2><b>Сделайте весь мир своей зоной комфорта</b></h2>
          <h2>Занимайтесь с Tutor и с лучшими репетиторами нашей компании</h2>
+         </div>
          <div className="container">
            <div className="block">
                <img

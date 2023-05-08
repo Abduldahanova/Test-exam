@@ -1,16 +1,17 @@
-* {
-    color: #fcf5f5;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-h1 {
+.main_bg {
     text-align: center;
     margin: 70px 0 15px 0;
     font-size: 36px;
 }
-h2 {
+
+.subtitle h2 {
     text-align: center;
+}
+.block {
+    width: calc(100% / 4);
+}
+.block h2 {
+    text-align: start;
     font-size: 45px;
     margin-bottom: 50px;
 }
