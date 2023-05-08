@@ -1,12 +1,15 @@
 
 import React, { useState, useEffect } from "react";
+import { useParams } from "react-router";
 import '../components/styles/mentor-list.css'
 
 const Category = () => {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState();
+  const { id } = useParams()
+  
   
   const getApiData = async () => {
-    const response = await fetch( `http://16.16.149.51/course/3/detail/`)
+    const response = await fetch( `http://16.16.149.51/course/${id}/detail/`)
     const data = await response.json()
     setData(data);
 };
@@ -33,9 +36,7 @@ useEffect(() => {
                       <div>{mentor.rate}</div>
                       
                     </div>
-                    <div className="text-mentor">
-                          <p>Сертифицированный преподаватель-носитель испанского языка из Гран-Канарии 🎓 Степень в области испанского языка и латиноамериканской литературы👩‍🎓 2 года опыта 👩‍🏫 Эксперт в области быстрого обучения</p>
-                    </div>
+  
                 </div>
                 
                

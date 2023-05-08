@@ -6,7 +6,7 @@ import medal from '../components/images/svg/medal.svg'
 import safety from '../components/images/svg/safety.svg'
 import shed from '../components/images/svg/shed.svg'
 import price from '../components/images/svg/price.svg'
-import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 
 
@@ -14,11 +14,12 @@ import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-do
 import React, { useState, useEffect } from "react";
 
 const Home = () => {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([]);
   
   const getApiData = async () => {
-    const response = await fetch( `http://16.16.149.51/course/3/detail/`)
+    const response = await fetch( `http://16.16.149.51/course/`)
     const data = await response.json()
+    console.log(data)
     setData(data);
 };
 
@@ -36,8 +37,8 @@ useEffect(() => {
      
      
      <div className="catalog">
-      { data?.mentors.map((course) => (
-        <NavLink className="list-group-item list-group-item-action" to="/category" key={course}>
+      { data.map((data) => (
+        <NavLink className="list-group-item list-group-item-action" to={`/category/${data.id}`} key={data}>
           {data.name}
         </NavLink>
       ))}
