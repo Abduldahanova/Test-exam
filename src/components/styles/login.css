@@ -8,7 +8,9 @@ form {
     text-align: center;
 }
 form > input {
-    color: #141619;
+    background-color: transparent;
+    border: 2px solid #ffff;
+    color: #fff;
     width: 400px;
     height: 70px;
     margin: 0 auto;

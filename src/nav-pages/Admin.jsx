@@ -21,7 +21,7 @@ const AdminPage = () => {
     
     useEffect(() => {
         getApiData();
-    }, [tab]);
+    }, [data]);
 
     return(
        
