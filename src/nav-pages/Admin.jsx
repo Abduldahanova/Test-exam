@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink, useParams } from "react-router-dom";
+import { Link, NavLink, useParams } from "react-router-dom";
 import { MentorsTable } from "../components/tables/mentors";
 import { CategoriesTable } from "../components/tables/categories";
 import { StudentsTable } from "../components/tables/students";
@@ -38,7 +38,7 @@ const AdminPage = () => {
     });
     const responseData = await response.json();
     console.log(responseData);
-  
+
     setModalVisible(true);
   };
 
@@ -59,7 +59,7 @@ const AdminPage = () => {
     });
     const responseData = await response.json();
     console.log(responseData);
-    
+
     setModalVisible(true);
   };
 
@@ -74,10 +74,10 @@ const AdminPage = () => {
     });
     const responseData = await response.json();
     console.log(responseData);
-    
+
     setModalVisible(true);
   };
-  
+
   return (
     <div className={M.container}>
       <div className={M.btn}>
@@ -86,17 +86,16 @@ const AdminPage = () => {
         <button onClick={handleEdditor} className={M.edit}>Редактировать</button>
         <button onClick={handleDelete} className={M.delete}>Удалить</button>
       </div>
-
       <div className={M.list}>
-        <NavLink to="/Profile/mentor">Менторы</NavLink>
-        <NavLink to="/Profile/student">Студенты</NavLink>
-        <NavLink to="/Profile/course">Категории</NavLink>
+        <Link to="/Profile/mentor">Менторы</Link>
+        <Link to="/Profile/student">Студенты</Link>
+        <Link to="/Profile/course">Категории</Link>
       </div>
 
       {tab === "mentor" && <MentorsTable data={data} />}
       {tab === "student" && <StudentsTable data={data} />}
       {tab === "course" && <CategoriesTable data={data} />}
-        {modalVisible && (
+      {modalVisible && (
         <Modal>
           <h2>Заголовок модального окна</h2>
           <p>Текст модального окна</p>

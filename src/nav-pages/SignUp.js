@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import '../components/styles/login.css'
 import './Admin.jsx'
+import { useNavigate } from 'react-router';
 
 export const SignUp = () => {
+
+  const navigate = useNavigate()
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const [errors, setErrors] = useState({ username: '', password: '' })
@@ -20,7 +23,7 @@ export const SignUp = () => {
     setErrors(newErrors)
 
     if (!newErrors.username && !newErrors.password) {
-      fetch('http://16.16.149.51/api/auth_token/', {
+      fetch('http://16.16.149.51/auth_token/', {
         method: 'POST',
         body: JSON.stringify({ username, password }),
         headers: {
@@ -31,6 +34,7 @@ export const SignUp = () => {
         .then((data) => {
           localStorage.setItem('token', data.token)
         })
+        .then(()=> navigate("/Profile/admin"))
     }
   }
 
@@ -39,7 +43,7 @@ export const SignUp = () => {
   }
 
   return (
-    <form>
+    <form onSubmit={handleLogin}>
       <div className="input-container">
         <p className='subtitle'>Логин</p>
         <input
@@ -67,8 +71,7 @@ export const SignUp = () => {
           <button className='show-btn' type="button" onClick={toggleShowPassword}>
             {showPassword ? 'Скрыть пароль' : 'Показать пароль'}
           </button>
-      <button className='profile-btn' onClick={handleLogin}>Войти</button>
-      <a href="/Profile/admin">asd</a>
+      <button className='profile-btn'>Войти</button>
     </form>
   )
 }
