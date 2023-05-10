@@ -27,10 +27,10 @@ const Footer = () => {
             <div className='footer-form'>
                 <h2 className='subtitle'>Наши контакты:</h2>
                     <div className="footer-list">
-                    <img src={MapSvg} />
+                    <a href="https://www.google.com/maps/search/7+%D0%BC%D0%BA%D1%80+codify/@42.8532164,74.5694835,13z/data=!3m1!4b1"><img src={MapSvg} /></a>
                         <div className='footer-detail'>
                         <h3>Наш адрес :</h3>
-                            <p>город Бишкек, 7 микрорайон, дом 26/7.</p>
+                            <a href="https://www.google.com/maps/search/7+%D0%BC%D0%BA%D1%80+codify/@42.8532164,74.5694835,13z/data=!3m1!4b1"><p>город Бишкек, 7 микрорайон, дом 26/7.</p></a>
                         </div>
                     </div>
                     <div className="footer-list">

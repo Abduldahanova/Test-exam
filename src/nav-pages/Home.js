@@ -34,7 +34,7 @@ useEffect(() => {
      <br />с репетиторами Tutor </h1>
      <CarouselBox />
      
-     
+
      <div className="catalog">
       { data.map((data) => (
         <NavLink className="list-group-item list-group-item-action" to={`/category/${data.id}`} key={data}>

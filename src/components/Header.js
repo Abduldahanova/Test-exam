@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import About from '../nav-pages/About'
 import Contacts from '../nav-pages/Contacts'
 import SignUp from '../nav-pages/SignUp'
-// import BG from ".././components/images/png/1664796989_j-2-removebg-preview (1).png"
+
 
 
 
@@ -45,7 +45,7 @@ const Header = () => {
                     <Route path="/signUp" element={<SignUp/>}/>
                 </Routes>
             </Router>
-            {/* <img className='Bg' src={BG} alt="" /> */}
+            
             </div>
         )
     }
