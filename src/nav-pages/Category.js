@@ -26,19 +26,20 @@ useEffect(() => {
 
                 <div className="item-containers">
                 <img src={`http://16.16.149.51/${mentor.avatar}`}/>
+                  <div className="content">
                     <div className="container">
                      
                       <div className="block-item">
-                          <div>{mentor.name}</div>
-                          <div>{mentor.age}</div>
+                          <div>Имя : {mentor.name}</div>
+                          <div>Возраст : {mentor.age}</div>
+                          <div>Стаж работы : {mentor.experience}</div>
                       </div>
-                      <div>{mentor.experience}</div>
-                      <div>{mentor.rate}</div>
-                      
+                      <div>{mentor.rate}$ за час занятия</div>
                     </div>
-  
+                    <p>Всем привет!!!</p>
+                    <div>{data.description}</div>
                 </div>
-                
+                </div>
                
 
               </div>

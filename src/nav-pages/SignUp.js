@@ -13,7 +13,7 @@ export const SignUp = () => {
 
   const handleLogin = (e) => {
     e.preventDefault()
-    fetch('http://localhost:1717/login', {
+    fetch('http://16.16.149.51/register/', {
       method: 'POST',
       body: JSON.stringify({ username, password }),
       headers: {

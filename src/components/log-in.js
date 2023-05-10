@@ -19,30 +19,28 @@ const handleLogin = (e) => {
     })
 }
     return (
-        
         <div className="container-input">
-            
-        <form>
-            <p>Эл. почта</p>
-            <input 
-            type="text"
-            name="username"
-            placeholder="Ваше имя или адрес эл.почты" 
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            />
-            <p>Пароль</p>
-            <input
-            type="password"
-            name="password"
-            placeholder="Ваш пароль" 
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            />
-            <button onClick={handleLogin}
-            >Log in
-            </button>
-        </form>
+            <form>
+                <p>Эл. почта</p>
+                <input 
+                type="text"
+                name="username"
+                placeholder="Ваше имя или адрес эл.почты" 
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                />
+                <p>Пароль</p>
+                <input
+                type="password"
+                name="password"
+                placeholder="Ваш пароль" 
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                />
+                <button onClick={handleLogin}
+                >Log in
+                </button>
+            </form>
         </div>
     )
 }
