@@ -7,7 +7,7 @@ form {
     align-items: center;
     text-align: center;
 }
-form > input {
+input {
     background-color: transparent;
     border: 2px solid #ffff;
     color: #fff;
@@ -16,20 +16,12 @@ form > input {
     margin: 0 auto;
     padding-left: 10px;
 }
+
 form > p {
     margin-top: 20px;
 }
-form > profile-box {
-    text-align: center;
-    cursor: pointer;
-    background-color: #b99272;
-    text-transform: uppercase;
-    width: 150px;
-    height: 50px;  
-    border-radius: 20px;
-    text-decoration: none;
-    margin-top: 20px;
-    padding-top: 14px;
+.show-btn {
+    padding: 3px;
 }
 .profile-btn {
     color: #fff;

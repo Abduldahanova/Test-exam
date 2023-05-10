@@ -23,7 +23,7 @@ const handleLogin = (e) => {
         <div className="container-input">
             
         <form>
-            <p>Эл. почта</p>
+            <p>Эл. почта\</p>
             <input 
             type="text"
             name="username"
