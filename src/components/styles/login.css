@@ -7,16 +7,21 @@ form {
     align-items: center;
     text-align: center;
 }
+.input-container .subtitle {
+    font-weight: bolder;
+    font-size: x-large;
+    margin: 0;
+}
 input {
     background-color: transparent;
     border: 2px solid #ffff;
     color: #fff;
     width: 400px;
     height: 70px;
+    outline: none;
     margin: 0 auto;
     padding-left: 10px;
 }
-
 form > p {
     margin-top: 20px;
 }

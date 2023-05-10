@@ -8,7 +8,7 @@ import M from "../components/styles/admin.module.css";
 
 const AdminPage = () => {
   const [data, setData] = useState([]);
-  const { tab } = useParams();
+  const { tab, id } = useParams();
   const [modalVisible, setModalVisible] = useState(false);
 
   const getApiData = async () => {
@@ -23,7 +23,7 @@ const AdminPage = () => {
 
   const handleAdd = async () => {
     console.log("handleAdd function called");
-    const response = await fetch("http://16.16.149.51/mentor/create/", {
+    const response = await fetch(`http://16.16.149.51/${tab}/create/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -41,15 +41,50 @@ const AdminPage = () => {
   
     setModalVisible(true);
   };
+
+  const handleEdditor = async () => {
+    console.log("handleEdditor function called");
+    const response = await fetch(`http://16.16.149.51/${tab}/${id}/`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: "",
+        age: "",
+        experience: "",
+        rate: "",
+        user: "",
+      }),
+    });
+    const responseData = await response.json();
+    console.log(responseData);
+    
+    setModalVisible(true);
+  };
+
+  const handleDelete = async () => {
+    console.log("handleDelete function called");
+    const response = await fetch(`http://16.16.149.51/${tab}/${id}/`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({}),
+    });
+    const responseData = await response.json();
+    console.log(responseData);
+    
+    setModalVisible(true);
+  };
   
   return (
     <div className={M.container}>
       <div className={M.btn}>
-        <NavLink to="/Profile/create/"> <button onClick={handleAdd} className={M.Add}>
-          Добавить
-        </button></NavLink>
-        <button className={M.edit}>Редактировать</button>
-        <button className={M.delete}>Удалить</button>
+        <button onClick={handleAdd} className={M.Add}>
+          Добавить</button>
+        <button onClick={handleEdditor} className={M.edit}>Редактировать</button>
+        <button onClick={handleDelete} className={M.delete}>Удалить</button>
       </div>
 
       <div className={M.list}>

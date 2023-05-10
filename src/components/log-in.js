@@ -21,11 +21,11 @@ const handleLogin = (e) => {
     return (
         <div className="container-input">            
         <form>
-            <p>Эл. почта\</p>
+            <p>Логин</p>
             <input 
             type="text"
             name="username"
-            placeholder="Ваше имя или адрес эл.почты" 
+            placeholder="Ваш логин" 
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             />

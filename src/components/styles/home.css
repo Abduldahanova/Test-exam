@@ -72,10 +72,15 @@
 }
 
 .list-group-item:hover {
-    color: #000;
+    transition: 0.7s;
+    scale: 0.9;
+    color: #fff;
     border-radius: 30px;
 }
-
+.list-group-item:active {
+    transition: 0.6s;
+    scale: 1; 
+}
 .list-group-item-action {
     font-size: 28px;
     font-weight: bold;

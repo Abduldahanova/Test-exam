@@ -29,6 +29,15 @@
     margin-bottom: 20px;
 }
 
+.list a:hover {
+    transition: 0.7s;
+    scale: 0.9;
+}
+.list a:active {
+    transition: 0.6s;
+    scale: 1; 
+}
+
 .table {
     width: 85%;
     margin-top: 100px;
@@ -86,6 +95,15 @@ button {
     border-radius: 20px;
     margin-top: 20px;
     margin-right: 10px;
+}
+
+button:hover {
+    transition: 0.7s;
+    scale: 0.9;
+}
+button:active {
+    transition: 0.6s;
+    scale: 1;
 }
 
 

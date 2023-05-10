@@ -41,7 +41,7 @@ export const SignUp = () => {
   return (
     <form>
       <div className="input-container">
-        <p>Логин</p>
+        <p className='subtitle'>Логин</p>
         <input
           type="text"
           name="username"
@@ -52,7 +52,7 @@ export const SignUp = () => {
         {errors.username && <p style={{ color: 'red' }}>{errors.username}</p>}
       </div>
       <div className="input-container">
-        <p>Пароль</p>
+        <p className='subtitle'>Пароль</p>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <input
             type={showPassword ? 'text' : 'password'}
@@ -61,12 +61,12 @@ export const SignUp = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button className='show-btn' type="button" onClick={toggleShowPassword}>
-            {showPassword ? 'Скрыть пароль' : 'Показать пароль'}
-          </button>
         </div>
         {errors.password && <p style={{ color: 'red' }}>{errors.password}</p>}
       </div>
+          <button className='show-btn' type="button" onClick={toggleShowPassword}>
+            {showPassword ? 'Скрыть пароль' : 'Показать пароль'}
+          </button>
       <button className='profile-btn' onClick={handleLogin}>Войти</button>
       <a href="/Profile/admin">asd</a>
     </form>
