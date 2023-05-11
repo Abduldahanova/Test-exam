@@ -1,7 +1,7 @@
-import './styles/style.css';
+import './styles/header.css';
 
 import React from 'react';
-import { Navbar, Container } from 'react-bootstrap'
+import { Navbar, Container, Nav } from 'react-bootstrap'
 import logo from '../components/images/svg/Tutor.svg'
 import { Link } from 'react-router-dom'
 
@@ -13,7 +13,7 @@ const Header = () => {
     return (
 
         <div>
-            <Navbar collapseOnSelect expand="md">
+            <Navbar collapseOnSelect expand="md" variant="dark">
                 <Container id='bar'>
                     <Navbar.Brand href="/">
                         <img
@@ -26,12 +26,12 @@ const Header = () => {
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <div className='nav-list'>
+                        <Nav className='nav-list'>
                             <Link to="/" >Главная</Link>
                             <Link to="/about">О Нас </Link>
                             <Link to="/contacts">Свяжитесь с нами</Link>
                             <Link to="/signUp">Войти</Link>
-                        </div>
+                        </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
