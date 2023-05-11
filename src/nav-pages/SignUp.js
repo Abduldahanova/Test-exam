@@ -39,7 +39,6 @@ export const SignUp = () => {
   }
 
   const toggleShowPassword = () => setShowPassword(!showPassword)
-
   return (
     <form onSubmit={handleLogin}>
       <div className="input-container">

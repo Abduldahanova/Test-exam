@@ -125,7 +125,6 @@ const AdminPage = () => {
       {    tab === "course" && <CategoriesTable data={data} />
   }
 
-  {/* Модальное окно */}
   <div className={`${MM.wrapper} ${wrapperModal}`}>
     <div className={MM.modalBody}>
       <button onClick={handleClose} className={MM.closeBtn}>

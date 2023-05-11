@@ -1,8 +1,8 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ErrorPage from './nav-pages/404page';
-import Header from './components/Header'
-import Footer from './components/Footer'
+import Header from './components/Header';
+import Footer from './components/Footer.js'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Category from './nav-pages/Category.js';
 import Home from './nav-pages/Home.js';
