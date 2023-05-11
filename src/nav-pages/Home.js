@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 
 import CarouselBox from '../components/CarouselBox ';
 import "../components/styles/home.css"
@@ -11,7 +12,6 @@ import { NavLink } from 'react-router-dom'
 
 
 
-import React, { useState, useEffect } from "react";
 
 const Home = () => {
   const [data, setData] = useState([]);
