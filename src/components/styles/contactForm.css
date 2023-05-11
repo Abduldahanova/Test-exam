@@ -121,16 +121,19 @@ input::placeholder {
 }
 .contact-menu button {
     cursor: pointer;
-    background-color: #b99272;
+    background-color: transparent;
     color: #fff;
     text-transform: uppercase;
     font-weight: 400;
     width: 210px;
     height: 50px;
     border-radius: 20px;
-    border: none;
+    border: 2px solid #ffff;
     margin: 0 auto;
     margin-bottom: 100px;
+}
+.contact-menu button:hover {
+    background-color: #b99272;
 }
 
 @media screen and (max-width: 1000px) {
@@ -167,4 +170,5 @@ input::placeholder {
         width: 160px;
         height: 50px;
     }
+
 }

@@ -1,6 +1,33 @@
 import M from '../styles/admin.module.css'
+import axios from 'axios';
 
 export const MentorsTable = ({ data }) => {
+    console.log(data);
+
+
+    const btnDelete = (e, id) => {
+      e.preventDefault();
+      console.log(id);
+    
+      
+    const headers = new Headers();
+headers.append('Authorization', `Token ${localStorage.getItem('token')}`);
+headers.append('Content-Type', 'application/json');
+headers.append('Accept', 'application/json');
+headers.append('Authorization', `Basic 	tutor.azat : @bcdefgh`);
+
+fetch( `http://16.16.149.51/mentor/${id}`, {
+  method: 'DELETE',
+  headers: headers,
+})
+  .then(response => {
+    // Обработка ответа сервера
+  })
+  .catch(error => {
+    // Обработка ошибки
+  });
+    };
+         
     return (
         <table className={M.table}>
                     <thead>
@@ -24,6 +51,9 @@ export const MentorsTable = ({ data }) => {
                                     <td>{item.experience}</td>
                                     <td>{item.rate}</td>
                                     <td>{item.course}</td>
+
+                                    <button onClick={(e) => btnDelete(e, item.id)} className={M.deleteBtn}> Delete</button>
+
                                 </tr>
                         ))}
                     </tbody>

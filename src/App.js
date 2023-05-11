@@ -1,14 +1,14 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ErrorPage from './nav-pages/404page';
 import Header from './components/Header';
 import Footer from './components/Footer.js'
-import ErrorPage from './nav-pages/404page';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Category from './nav-pages/Category.js';
 import Home from './nav-pages/Home.js';
 import About from './nav-pages/About';
 import Profile from './nav-pages/Admin'
-import Create from './components/Modal'
+import Create from './components/tables/Modal'
 import SignUp from "./nav-pages/SignUp"
 import Contacts from "./nav-pages/Contacts"
 import React, { useState, useEffect } from "react";
@@ -32,18 +32,19 @@ function App() {
   }
   return (
     <div>
-
+      <Header />
       <Routes>
-        <Route path="/" element={<div><Header /><Home /><Footer /></div>} />
-        <Route path="/category/:id" element={<div><Header /><Category /><Footer /></div>} />
-        <Route path="/Profile/:id" element={<div><Header /><Profile /><Footer /></div>} />
-        <Route path="/create" element={<div><Header /><Create /><Footer /></div>} />
-        <Route path="/about" element={<div><Header /><About /><Footer /></div>} />
-        <Route path="/contacts" element={<div><Header /><Contacts /><Footer /></div>} />
-        <Route path="/signUp" element={<div><Header /><SignUp /><Footer /></div>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/category/:id" element={<Category />} />
+        <Route path="/Profile" element={<Profile />} />
+        <Route path="/Profile/:tab" element={<Profile />} />
+        <Route path="/create" element={<Create />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contacts" element={<Contacts />} />
+        <Route path="/signUp" element={<SignUp />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-
+      <Footer />
     </div>
   )
 }

@@ -13,35 +13,32 @@ export const SignUp = () => {
 
   const handleLogin = (e) => {
     e.preventDefault()
-    let newErrors = { username: '', password: '' }
-    if (!username) {
-      newErrors.username = 'Введите логин'
-    }
-    if (!password) {
-      newErrors.password = 'Введите пароль'
-    }
-    setErrors(newErrors)
-
-    if (!newErrors.username && !newErrors.password) {
+    const newErrors = { username: '', password: '' }
+    if (username === 'tutor.azat' && password === '@bcdefgh') {
       fetch('http://16.16.149.51/auth_token/', {
         method: 'POST',
         body: JSON.stringify({ username, password }),
-        headers: {
+        headers: { 
           'Content-Type': 'application/json'
-        }
+       }
       })
         .then(res => res.json())
         .then((data) => {
-          localStorage.setItem('token', data.token)
+          localStorage.setItem('token', data.token);
+          localStorage.setItem('username', username);
+          localStorage.setItem('password', password);
         })
-        .then(()=> navigate("/Profile/admin"))
+        
+        .then(() => navigate("/Profile/admin"))
+        .catch((error) => console.error(error))
+    } else {
+      newErrors.username = 'Неправильный логин'
+      newErrors.password = 'Неправильный пароль'
     }
+    setErrors(newErrors)
   }
 
-  const toggleShowPassword = () => {
-    setShowPassword(!showPassword)
-  }
-
+  const toggleShowPassword = () => setShowPassword(!showPassword)
   return (
     <form onSubmit={handleLogin}>
       <div className="input-container">
@@ -65,12 +62,12 @@ export const SignUp = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-        </div>
         {errors.password && <p style={{ color: 'red' }}>{errors.password}</p>}
-      </div>
           <button className='show-btn' type="button" onClick={toggleShowPassword}>
             {showPassword ? 'Скрыть пароль' : 'Показать пароль'}
           </button>
+        </div>
+      </div>
       <button className='profile-btn'>Войти</button>
     </form>
   )

@@ -25,14 +25,19 @@ input {
 form > p {
     margin-top: 20px;
 }
-.show-btn {
+button {
+    background-color: transparent;
+    border: 2px solid #ffff;
     padding: 3px;
 }
 .profile-btn {
     color: #fff;
     text-decoration: none;
 }
+button:hover {
+    background-color: #b99272;
 
+}
 @media screen and (max-width: 700px) {
     input {
         width: 300px;
@@ -48,4 +53,5 @@ form > p {
     .profile-btn {
         font-size: 14px;
     }
+
 }
