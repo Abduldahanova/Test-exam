@@ -11,13 +11,30 @@ import Profile from './nav-pages/Admin'
 import Create from './components/Modal'
 import SignUp from "./nav-pages/SignUp"
 import Contacts from "./nav-pages/Contacts"
+import React, { useState, useEffect } from "react";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 2000); 
+  }, []);
+  if (loading) {
+    return (
+      <div className="loader-container">
+        <div className="loader book">
+          <figure className="page"></figure>
+          <figure className="page"></figure>
+          <figure className="page"></figure>
+        </div>
+        <h4>Loading...</h4>
+      </div>
+    );
+  }
   return (
     <div>
-    
+
       <Routes>
-      <Route path="/" element={<div><Header /><Home /><Footer /></div>} />
+        <Route path="/" element={<div><Header /><Home /><Footer /></div>} />
         <Route path="/category/:id" element={<div><Header /><Category /><Footer /></div>} />
         <Route path="/Profile/:id" element={<div><Header /><Profile /><Footer /></div>} />
         <Route path="/create" element={<div><Header /><Create /><Footer /></div>} />

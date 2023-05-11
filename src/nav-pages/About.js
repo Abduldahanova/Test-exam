@@ -11,13 +11,15 @@ import img1 from '../components/images/jpg/about/img1.jpg'
 import img2 from '../components/images/jpg/about/img2.jpg'
 import img3 from '../components/images/jpg/about/img3.jpg'
 import img4 from '../components/images/jpg/about/img4.jpg'
+import Loading from "../components/Load";
 
 
 
 const About = () => {
   return (
+  
     <div className="text-container">
-      
+     
       {/* <img className="w-100" src={about} alt="#" /> */}
       <img className="img" src={team} alt="" />
       <div className="about-text">

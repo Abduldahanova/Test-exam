@@ -13,8 +13,7 @@ import china from "../components/images/jpg/china.jpg"
 
 import "./styles/swiper.css";
 
-
-import { Autoplay, EffectCube, Pagination } from "swiper";
+import { Autoplay, Pagination, Navigation } from 'swiper';
 
 export default function CarouselBox() {
   const progressCircle = useRef(null);
@@ -26,20 +25,17 @@ export default function CarouselBox() {
   return (
     <>
       <Swiper
-        effect={"cube"}
-        grabCursor={true}
-        cubeEffect={{
-          shadow: true,
-          slideShadows: true,
-          shadowOffset: 20,
-          shadowScale: 0.94,
-        }}
+        spaceBetween={30}
+        centeredSlides={true}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
         }}
-        pagination={true}
-        modules={[Autoplay, EffectCube, Pagination]}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
         onAutoplayTimeLeft={onAutoplayTimeLeft}
         className="mySwiper"
       >

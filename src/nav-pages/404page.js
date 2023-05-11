@@ -7,7 +7,7 @@ const ErrorPage = () => {
     return (
         <div id={E.main}>
     	<div class={E.fof}>
-        		<h1>Error 404</h1>
+        		<h1>Error вам выставлена оценка 2)))</h1>
     	</div>
     </div>
     )
