@@ -1,0 +1,57 @@
+.table {
+    width: 85%;
+    height: 100vh;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+.table thead {
+    border: 2px solid white;
+    border-bottom: none;
+}
+.name{
+    text-align: left;
+    margin-left: 10px;
+}
+.table th {
+    font-size: xx-large;
+    width: 250px;
+    height: 70px;
+    text-align: center;
+    border: 2px solid white;
+
+}
+
+.table tr {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.table td {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    border: 2px solid white;
+
+}
+
+.btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% / 3) - 30px;
+    height: 200px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #b99272;
+    color: #fff;
+    text-transform: uppercase;
+    width: 150px;
+    height: 50px;  
+    border: none    ;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+}

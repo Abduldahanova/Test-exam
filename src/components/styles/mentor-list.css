@@ -1,16 +1,20 @@
-.item-containers {
-    border: 2px solid black;
+.cards {
     display: flex;
     background: rgba(55, 55, 55, 0.2);
     backdrop-filter: blur(8px);
-    justify-content: space-between;
+    font-size: 18px;
 }
-.container {
-    display: flex;
-    justify-content: space-between;
+.item-containers {
+    border: 1px solid #fff;
 }
 .item-containers > img {
-    width: 300px;
+    border-radius: 20%;
+    border: 1px solid #fff;
+    object-fit: cover;
+    width: 250px;
     height: 200px;
-
+    margin: 15px 10px;
+}
+.block-item {
+    padding: 12px;
 }

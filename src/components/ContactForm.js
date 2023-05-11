@@ -53,16 +53,16 @@ function GroupCards() {
       </Card>
         </div>
       <div className="contact-menu">
-        <h4>contact us</h4>
-        <h2>Send Us Message</h2>
+        <h4>Свяжитесь с нами</h4>
+        <h2>Оставьте заявку</h2>
         <div className="input-menu">
-          <input type="text" name="name" placeholder="Name"/>
-          <input type="email" name="email" placeholder="Email Adress"/>
-          <input type="tel" name="phone" placeholder="Phone Number"/>
+          <input type="text" name="name" placeholder="Имя"/>
+          <input type="email" name="email" placeholder="Email адрес"/>
+          <input type="tel" name="phone" placeholder="Номер телефона"/>
         </div>
-          <input className="text-subject" type="text" name="subject" placeholder="Subject"/>
-          <textarea className="text-message" name="message" placeholder="Message"></textarea>
-          <button onClick={handleButtonClick}>Send us message</button>
+          <input className="text-subject" type="text" name="subject" placeholder="Тема"/>
+          <textarea className="text-message" name="message" placeholder="Сообщение"></textarea>
+          <button onClick={handleButtonClick}>Отправить</button>
       </div>
     </CardGroup>
   );

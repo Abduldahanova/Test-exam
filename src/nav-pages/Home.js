@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 
 import CarouselBox from '../components/CarouselBox ';
 import "../components/styles/home.css"
@@ -11,7 +12,6 @@ import { NavLink } from 'react-router-dom'
 
 
 
-import React, { useState, useEffect } from "react";
 
 const Home = () => {
   const [data, setData] = useState([]);
@@ -34,7 +34,7 @@ useEffect(() => {
      <br />с репетиторами Tutor </h1>
      <CarouselBox />
      
-     
+
      <div className="catalog">
       { data.map((data) => (
         <NavLink className="list-group-item list-group-item-action" to={`/category/${data.id}`} key={data}>
