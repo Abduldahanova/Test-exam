@@ -70,6 +70,7 @@ const AdminPage = () => {
     const response = await fetch(`http://16.16.149.51/${tab}/${id}/`, {
       method: "PUT",
       headers: {
+        'Authorization': `Token ${localStorage.getItem('token')}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
@@ -130,7 +131,7 @@ const AdminPage = () => {
       <button onClick={handleClose} className={MM.closeBtn}>
         X
       </button>
-      <form onSubmit={handleSubmit} className={MM.modalForm}>
+      <form className={MM.modalForm}>
         
         <h3>Добавить {tab === "mentor" ? "Ментора" : tab === "student" ? "Студента" : "Категорию"}</h3>
         <div className={MM.formItem}>

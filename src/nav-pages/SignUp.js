@@ -14,7 +14,7 @@ export const SignUp = () => {
   const handleLogin = (e) => {
     e.preventDefault()
     const newErrors = { username: '', password: '' }
-    if (username === 'tutor.azat' && password === '@bcdefgh') {
+    if (username === 'tutor.maks' && password === '@bcdefgh') {
       fetch('http://16.16.149.51/auth_token/', {
         method: 'POST',
         body: JSON.stringify({ username, password }),
