@@ -1,4 +1,4 @@
-import './styles/style.css';
+import './styles/loader.css';
 
 import React from 'react';
 import { useEffect, useState } from "react"

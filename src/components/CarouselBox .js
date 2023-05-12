@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
@@ -25,19 +25,19 @@ export default function CarouselBox() {
   return (
     <>
       <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        onAutoplayTimeLeft={onAutoplayTimeLeft}
-        className="mySwiper"
+               spaceBetween={30}
+               centeredSlides={true}
+               autoplay={{
+                 delay: 2500,
+                 disableOnInteraction: false,
+               }}
+               pagination={{
+                 clickable: true,
+               }}
+               navigation={true}
+               modules={[Autoplay, Pagination, Navigation]}
+               onAutoplayTimeLeft={onAutoplayTimeLeft}
+               className="mySwiper"
       >
         <SwiperSlide>
           <img src={eng} />

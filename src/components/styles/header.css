@@ -21,13 +21,27 @@
    display: flex;
    justify-content: space-evenly;
    width: 100%;
+   font-size: 26px;
 }
-.nav-link {
-   font-size: larger;
+.nav-list > a {
+   color: #ffffff;
 }
-.nav-link:hover {
+.nav-list > a:hover {
    color: #efe78f;
 }
+
+
+
+@media screen and (max-width: 1000px) {
+   .nav-list {
+      font-size: 20px;
+   }
+   .d-inline-block {
+      width: 90px;
+      height: 70px;
+   }
+}
+
 
 
 

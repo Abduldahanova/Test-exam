@@ -30,6 +30,28 @@ button {
     border: 2px solid #ffff;
     padding: 3px;
 }
+.profile-btn {
+    color: #fff;
+    text-decoration: none;
+}
 button:hover {
     background-color: #b99272;
+
+}
+@media screen and (max-width: 700px) {
+    input {
+        width: 300px;
+    }
+    .input-container> .subtitle {
+        font-size: 20px;
+        margin: 10px
+    }
+    .show-btn {
+        padding: 3px;
+        font-size: 14px;
+    }
+    .profile-btn {
+        font-size: 14px;
+    }
+
 }

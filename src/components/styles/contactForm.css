@@ -54,7 +54,7 @@
 .contact-menu {
     display: flex;
     flex-direction: column;
-    width: 1170px;
+    width: 90%;
     font-size: larger;
     margin: 0 auto;
 }
@@ -134,4 +134,41 @@ input::placeholder {
 }
 .contact-menu button:hover {
     background-color: #b99272;
+}
+
+@media screen and (max-width: 1000px) {
+    .card {
+        width: 40%;
+    }
+    .contact-menu h2 {
+        font-size: 36px;
+    }   
+}
+@media screen and (max-width: 700px) {
+    .card-img {
+        width: 40%;
+        height: 30%;
+    }
+    .card-body {
+        padding: 0;
+    }
+    .card-title {
+        margin: 10px 0;
+    }
+    .card-text {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .contact-menu h2 {
+        font-size: 30px;
+    } 
+    .input-menu > input {
+        font-size: 16px;
+    }
+    .contact-menu button {
+        font-size: 16px;
+        width: 160px;
+        height: 50px;
+    }
+
 }
